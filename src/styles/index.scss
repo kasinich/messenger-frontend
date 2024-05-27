@@ -1,0 +1,57 @@
+@import 'layouts/chat';
+
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+html,
+body,
+#root,
+.wrapper {
+    height: 100%;
+    color: #202020;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    background: #F4F7FD;
+}
+
+body .auth {
+    background: #ffffff;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+p {
+    margin-top: 0;
+}

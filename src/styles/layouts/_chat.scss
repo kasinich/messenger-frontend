@@ -1,0 +1,136 @@
+.chat {
+    display: flex;
+    height: 100%;
+    width: 1140px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.04204);
+
+    &__sitebar {
+        width: 320px;
+        border-right: 1px solid #F7F7F7;
+
+        &-header {
+            display: flex;
+            padding: 17px 17px 17px;
+            justify-content: space-between;
+            border-bottom: solid #F7F7F7;
+
+            &>div {
+                .anticon-team {
+                    display: inline-block;
+                    margin-right: 7px;
+                }
+            }
+
+            button.ant-btn {
+                font-size: 14px;
+                opacity: 0.5;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 1;
+                    background: none !important;
+                }
+            }
+        }
+
+
+        &-dialogs {
+            height: calc(100% - 61px);
+
+            .dialogs {
+                height: 100%;
+                overflow: auto;
+
+                &__item {
+                    margin: 0;
+                    padding: 13px 20px;
+                    cursor: pointer;
+
+                    &.active,
+                    &:hover {
+                        background-color: #F3F7FF;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+
+        /* &-footer {
+            height: 67px;
+            width: auto;
+            position: absolute;
+            bottom: 0;
+            background-color: #fff
+        } */
+
+    }
+
+    &__dialog {
+        flex: 1;
+        position: relative;
+
+        .ant-empty {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.5;
+        }
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10.4px;
+            border-bottom: solid #F7F7F7;
+
+            &-center {
+                text-align: center;
+            }
+
+            &-username {
+                display: block;
+                margin-bottom: 5px;
+
+            }
+
+            button.ant-btn {
+                font-size: 20px;
+                opacity: 0.5;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 1;
+                    background: none !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1144px) {
+    .chat {
+        width: 1096px
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .chat {
+        width: 959px
+    }
+}
+
+.ant-modal-body {
+    margin: 25px;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.emoji-mart-emoji {
+    vertical-align: sub;
+}
